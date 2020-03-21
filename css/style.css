@@ -1,1 +1,1 @@
-html{font-size:62.5%;scroll-behavior:smooth}.main-container{max-width:1920px;margin:0 auto}/*# sourceMappingURL=style.css.map */
+html{font-size:62.5%;scroll-behavior:smooth}.huge-container{max-width:1920px;margin:0 auto}.container{margin:0 auto;padding:2rem}.main{position:relative}.main__bg{position:absolute;top:0;right:0;width:37.5rem;height:36rem;z-index:0}.navbar{position:sticky;display:flex;flex-direction:row;justify-content:space-between;align-items:center;border:1px solid red;z-index:1}/*# sourceMappingURL=style.css.map */
