@@ -5,27 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900|Poppins:400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/91be3ea931.js" crossorigin="anonymous"></script>
-
+    <script src="scripts/scripts.js" async></script>
     <title>MITALENT Agency</title>
 </head>
 <body>
     <div class="huge-container">
-    <section class="main">
-        <img src="assets/bg1.png" alt="" class="main__bg" >
-        <div class="navbar container">
-            <nav>
-                <button><i class="fas fa-bars"></i></button>
-                <a href="#">Clients</a>
-                <a href="#">News</a>
-            </nav>
-            <h1>MITALENT</h1>
-            <a href="#"><i class="fas fa-search"></i></a>
-        </div>
-        <div class="favourite">
+        <section class="header">
+            <img src="assets/bg1.png" alt="" class="header__bg" >
+            <!-- nav__mobile -->
+            <div class="nav__mobile">
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="#">Class</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <!-- nav__mobile end -->
+            <div class="navbar container">
+                <nav class="nav">        
+                    <button type="button" class="nav__hamburger"><i class="fas fa-bars"></i></button>                   
+                    <a href="#" class="nav__item">Clients</a>
+                    <a href="#" class="nav__item">News</a>
+                </nav>
+                <h1><img src="assets/logo.png" alt="logo of Mitalent" class="navbar__logo"></h1>
+                <a href="#" class="search"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="favourite">
 
-        </div>
-    </section>
-</div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
+<!-- 
+sass --watch scss/style.scss:css/style.css --style compressed -->
