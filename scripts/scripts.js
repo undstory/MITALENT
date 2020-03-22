@@ -8,4 +8,5 @@ navHamburger.addEventListener("click", function(){
 
 closeBtn.addEventListener("click", function(){
     navMobile.classList.remove('animateMe');
+   
 }, false)
