@@ -1,0 +1,26 @@
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 24rem 70rem auto;
+
+    &__aside {
+        border: 1px solid red;
+    }
+
+    &__person {
+        position: relative;
+        z-index: 45;
+        border: 1px solid green;
+        background-image: url('../assets/personHome.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 46.7rem;
+    }
+
+    &__pagination {
+        border: 1px solid blue; 
+        position: relative;
+        z-index: 15;
+    }
+}
