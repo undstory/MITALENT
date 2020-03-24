@@ -7,11 +7,7 @@
     &__aside {
         border: 1px solid red;
     }
-    &__pagination {
-        border: 1px solid blue; 
-        position: relative;
-        z-index: 15;
-    }
+
 }
 
 .person {
@@ -86,4 +82,53 @@
         }
     }
 }
+
+.pag {
+    border: 1px solid blue; 
+    position: relative;
+    z-index: 15;
+
+    &__box {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+    }
+
+    &__item {
+        padding: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-family: $Nunito;
+        font-weight: $bold;
+        color: $unactiveFontGrey; 
+    }
+
+    &__link--active {      
+        color: $almostBlack; 
+        font-weight: $huuuge;
+    }
+
+    &__line {
+        width: 2.8rem;
+        height: .2rem;
+        background-color: transparent;
+        display: inline-block;
+        margin-bottom: .3rem;
+    }
+
+    &__line--active {
+        width: 2.8rem;
+        height: .2rem;
+        background-color: $almostBlack;
+        display: inline-block;
+        margin-bottom: .3rem;
+        margin-left: 3rem;
+    }
+}
+
+
 
