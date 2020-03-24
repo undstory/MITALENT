@@ -5,9 +5,8 @@
     grid-template-columns: 24rem 70rem auto;
 
     &__aside {
-        border: 1px solid red;
+        position: relative;
     }
-
 }
 
 .person {
@@ -84,7 +83,6 @@
 }
 
 .pag {
-    border: 1px solid blue; 
     position: relative;
     z-index: 15;
 
@@ -130,5 +128,46 @@
     }
 }
 
+.social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    &__item {
+        padding-bottom: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $almostBlack;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.aside__pag {
+    position: absolute;
+    bottom: 40%;
+    left: -15%; 
+    transform: rotate(-90deg);
+}
+
+.aside__number {
+    font-size: 1.2rem;
+    font-family: $Nunito;
+    font-weight: $huuuge;
+    color: $almostBlack; 
+}
+
+.aside__line {
+    width: 3.8rem;
+    height: .2rem;
+    background-color: $almostBlack;
+    display: inline-block;
+    margin-bottom: .3rem;
+    margin-left: 3rem;
+}
 
 
