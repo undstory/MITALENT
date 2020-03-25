@@ -20,7 +20,7 @@
 
     &__who {
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: -10%;
         z-index: 25;
     }
@@ -78,6 +78,10 @@
             bottom: 0;
             left: 0;
             z-index: 25;
+
+            &:hover {
+                color: #ee119d;
+            }
         }
     }
 }
@@ -145,6 +149,10 @@
 
         i {
             font-size: 1.5rem;
+        
+            &:hover {
+                color: #ee119d
+            }
         }
     }
 }
@@ -173,7 +181,7 @@
 }
 
 
-// media 
+// ? media
 
 @media all and (min-width: 1371px){
     html {
