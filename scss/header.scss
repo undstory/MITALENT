@@ -3,11 +3,9 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 20rem 70rem auto;
-    @include border; 
 
     &__aside {
         position: relative;
-        @include border;
     }
 }
 
@@ -19,7 +17,6 @@
     background-repeat: no-repeat;
     height: 46.7rem;
     max-width: 70rem;
-    @include border;
 
     &__who {
         position: absolute;
@@ -88,7 +85,6 @@
 .pag {
     position: relative;
     z-index: 15;
-    @include border; 
 
     &__box {
         position: absolute;
@@ -198,14 +194,21 @@
 
 @media all and (max-width: 1100px){
     .header {
-        grid-template-columns: 15rem 50rem auto;
+        grid-template-columns: 13rem 55rem auto;
     }
 
     .person {
-        height: 36.7rem;
-        max-width: 50rem;
-    }
+        height: 46.7rem;
+        max-width: 55rem;
 
+        &__who {
+            top: 35%;
+        }
+
+        &__name {
+            font-size: 5rem;
+        }
+    }
 
     .person__btns--1{
         width: 10rem; 
@@ -214,5 +217,44 @@
 
     .pag__line, .pag__line--active {
         display: none;
+    }
+
+    .pag__item {
+        padding-left: 1rem;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .header__aside, .pag {
+        display: none;
+    }
+
+    .header {
+        display: block;
+
+    }
+
+    .person {
+        margin: 0 auto;
+        max-width: 60rem;
+        background-position: center center;
+    
+        &__who {
+            left: 0;
+            top: .8%;
+        }
+
+        &__name {
+            font-size: 3rem;
+        }
+
+        &__occupation {
+            font-size: 1.2rem;
+            padding-top: .5rem;
+        }
+
+        &__btns--1 {
+            display: none;
+        }
     }
 }
