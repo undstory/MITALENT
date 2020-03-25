@@ -161,3 +161,9 @@
         justify-content: space-between;
     }
 }
+
+@media all and (min-width: 1701px) {
+    .navbar__bg {
+        width: 60rem;
+    }   
+}

@@ -2,10 +2,12 @@
     background-color: white;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 24rem 70rem auto;
+    grid-template-columns: 20rem 70rem auto;
+    @include border; 
 
     &__aside {
         position: relative;
+        @include border;
     }
 }
 
@@ -17,6 +19,7 @@
     background-repeat: no-repeat;
     height: 46.7rem;
     max-width: 70rem;
+    @include border;
 
     &__who {
         position: absolute;
@@ -85,11 +88,12 @@
 .pag {
     position: relative;
     z-index: 15;
+    @include border; 
 
     &__box {
         position: absolute;
         bottom: 0;
-        left: 20%;
+        left: 10%;
     }
 
     &__item {
@@ -103,6 +107,8 @@
         font-family: $Nunito;
         font-weight: $bold;
         color: $unactiveFontGrey; 
+        display: flex;
+        align-items: center;
     }
 
     &__link--active {      
@@ -171,3 +177,42 @@
 }
 
 
+// media 
+
+@media all and (min-width: 1371px){
+    html {
+        font-size: 80%;
+    }
+}
+
+@media all and (min-width: 1701px) {
+    .header {
+        grid-template-columns: 30rem 85rem auto;
+    }
+
+    .person {
+        height: 66.7rem;
+        max-width: 85rem;
+    }
+}
+
+@media all and (max-width: 1100px){
+    .header {
+        grid-template-columns: 15rem 50rem auto;
+    }
+
+    .person {
+        height: 36.7rem;
+        max-width: 50rem;
+    }
+
+
+    .person__btns--1{
+        width: 10rem; 
+        left: -10rem;
+    }
+
+    .pag__line, .pag__line--active {
+        display: none;
+    }
+}

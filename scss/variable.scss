@@ -18,3 +18,9 @@ $huuuge: 900;
 $almostBlack: #1a1a1d;
 $niceBlue: #b4d3d3;
 $unactiveFontGrey: #696970;
+
+//mixin 
+
+@mixin border {
+    border: 1px solid red; 
+}
