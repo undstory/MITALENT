@@ -4,16 +4,11 @@
 
     &__wrapper {
         display: grid;
-        grid-template-rows: repeat(2, 35rem);
+        grid-template-rows: repeat(2, 40rem);
         grid-template-columns: repeat(4, 30rem);
         justify-content: center;
-        padding: 4rem 2rem;
+        padding: 2rem 2rem;
         margin-top: 2rem;
-        @include border;
-    }
-
-    &__person {
-        @include border;
     }
 }
 
@@ -26,9 +21,9 @@
 
     &__item {
         padding-right: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         text-transform: uppercase;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
 
         &:last-child {
             padding-right: 0;
@@ -37,7 +32,6 @@
 
     &__link {
         text-decoration: none;
-        display: inline-block;
         font-family: $Nunito;
         color: $unactiveFontGrey; 
         font-weight: $bold;
