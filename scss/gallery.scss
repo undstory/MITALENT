@@ -10,6 +10,25 @@
         margin-top: 2rem;
     }
 
+    &__person1 {
+        position: relative;
+    }
+  
+    &__img1--active {
+    
+        background-color: blue;
+        opacity: .4;
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        color: black;
+        z-index: 33;
+        font-size: 2rem;
+    }
 
 }
 
