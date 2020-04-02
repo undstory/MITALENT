@@ -10,14 +10,37 @@
         margin-top: 2rem;
     }
 
-    &__person1 {
+    &__person1, &__person2 {
         position: relative;
+    
     }
   
-    &__img1--active {
+    &__img--active {
     
         background-color: blue;
         opacity: .4;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 33;
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: none; 
+
+        &--active {
+            display: block;
+        }
+
+        &--arrow {
+            transform: rotate(-45deg);
+        }
     }
 
     &__info {
@@ -25,9 +48,30 @@
         bottom: 2rem;
         left: 0;
         right: 0;
-        color: black;
+        color: $almostBlack;
         z-index: 33;
         font-size: 2rem;
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__name {
+        font-family: $Poppins;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: $bold;
+        letter-spacing: 1px;
+    }
+
+    &__role {
+        font-family: $Nunito;
+        font-size: 1.3rem;
+        font-weight: $extra-bold;
+        text-transform: uppercase;
+        text-align: center;
     }
 
 }
