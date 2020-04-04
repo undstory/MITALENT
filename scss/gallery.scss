@@ -5,6 +5,7 @@
     &__wrapper {
         display: flex;
         justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
         padding: 2rem 2rem;
         margin-top: 2rem;
@@ -77,7 +78,7 @@
 
 }
 
-.menu {
+.category {
     display: flex; 
     flex-direction: row;
     justify-content: center;
@@ -101,7 +102,7 @@
         color: $unactiveFontGrey; 
         font-weight: $bold;
         
-        &:hover {
+        &:hover, &--active {
             color: $almostBlack;
             font-weight: $extra-bold;
             border-bottom: 2px solid $almostBlack;
@@ -117,3 +118,10 @@
    }
 }
 
+@media all and (min-width: 1550px){
+    .gallery__wrapper {
+        width: 1500px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+}

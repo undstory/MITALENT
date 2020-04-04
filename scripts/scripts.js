@@ -20,7 +20,7 @@ navItem.forEach(function(e){
     }, false)
 })
 
-//---
+//--- gallery 
 
 let galleryImg = document.querySelectorAll(".gallery__img"); 
 let galleryInfo = document.querySelectorAll(".gallery__info");
@@ -41,8 +41,7 @@ galleryImg.forEach(function(img){
 
             if(element.getAttribute('data-filter') === filtr){
                 element.classList.add('gallery__info--active');
-            } 
-            
+            }            
         })
 
         galleryBtn.forEach(function(element){
@@ -52,9 +51,7 @@ galleryImg.forEach(function(img){
             if(element.getAttribute('data-filter') === filtr){
                 element.classList.add('gallery__btn--active');
             } 
-            
         })
-
     })
 
     img.addEventListener("mouseout", function(){
@@ -62,17 +59,35 @@ galleryImg.forEach(function(img){
 
         galleryInfo.forEach(function(element){
 
-            element.classList.remove('gallery__info--active');
-            
+            element.classList.remove('gallery__info--active');        
         })
 
         galleryBtn.forEach(function(element){
 
-            element.classList.remove('gallery__btn--active');
-            
+            element.classList.remove('gallery__btn--active');   
         })
-
     })
+})
 
+let categoryLink = document.querySelectorAll(".category__link");
+let galleryPerson = document.querySelectorAll(".gallery__person");
+
+
+categoryLink.forEach(function(element){
+    element.addEventListener("click", function(e){
+        e.preventDefault();
+        categoryLink.forEach(function(elem){
+            elem.classList.remove('category__link--active');
+        })
+        this.classList.toggle('category__link--active'); 
+        let filtr = this.getAttribute('data-filter');
+
+        galleryPerson.forEach(function(elem){
+            elem.style.display = 'none';
+            if(elem.getAttribute('data-filter') === filtr || elem.getAttribute('data-filter') === 'all' || filtr === 'all'){
+                elem.style.display = 'block';
+            }
+        })
+    })
 })
 

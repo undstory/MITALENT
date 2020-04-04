@@ -74,14 +74,15 @@
         <!-- 
             ! --------------gallery -->
         <section class="gallery container">
-            <ul class="menu">
-                <li class="menu__item"><a href="#" class="menu__link">Actor</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Musician</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Comedian</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Model</a></li>
+            <ul class="category">
+                <li class="category__item"><a href=""  data-filter="all" class="category__link category__link--active">All</a></li>
+                <li class="category__item"><a href="" data-filter="actor" class="category__link">Actor</a></li>
+                <li class="category__item"><a href="" data-filter="musician" class="category__link">Musician</a></li>
+                <li class="category__item"><a href=""  data-filter="comedian" class="category__link">Comedian</a></li>
+                <li class="category__item"><a href=""  data-filter="model" class="category__link">Model</a></li>
             </ul>
             <div class="gallery__wrapper">
-                <div class="gallery__person1">
+                <div class="gallery__person gallery__person1" data-filter="musician">
                     <img class="gallery__img" data-filter="1" src="assets/gallery/luis-villasmil-hh3ViD0r0Rc-unsplash.jpg" alt="photo of musician">
                     <button type="button" class="gallery__btn" data-filter="1"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="1">
@@ -89,7 +90,7 @@
                         <span class="gallery__role">Musician</span>
                     </div>
                 </div>
-                <div class="gallery__person2">
+                <div class="gallery__person gallery__person2" data-filter="actor">
                     <img class="gallery__img" data-filter="2" src="assets/gallery/taylor-hernandez-DLKR_x3T_7s-unsplash (1).jpg" alt="photo of actor">
                     <button type="button" class="gallery__btn" data-filter="2"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="2"> 
@@ -97,7 +98,7 @@
                         <span class="gallery__role">Actor</span>
                     </div>
                 </div>
-                <div class="gallery__person3">
+                <div class="gallery__person gallery__person3" data-filter="actor">
                     <img class="gallery__img" data-filter="3" src="assets/gallery/harishan-kobalasingam-8PMvB4VyVXA-unsplash.jpg" alt="photo of actor">
                     <button type="button" class="gallery__btn" data-filter="3"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="3"> 
@@ -105,7 +106,7 @@
                         <span class="gallery__role">Actor</span>
                     </div>
                 </div>
-                <div class="gallery__person4">
+                <div class="gallery__person gallery__person4" data-filter="model">
                     <img class="gallery__img" data-filter="4" src="assets/gallery/sam-burriss-8wbxjJBrl3k-unsplash.jpg" alt="photo of model">
                     <button type="button" class="gallery__btn" data-filter="4"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="4"> 
@@ -113,7 +114,7 @@
                         <span class="gallery__role">Model</span>
                     </div>
                 </div>
-                <div class="gallery__person5">
+                <div class="gallery__person gallery__person5" data-filter="comedian">
                     <img class="gallery__img" data-filter="5" src="assets/gallery/yucel-moran-nd0AqhGk5ZI-unsplash.jpg" alt="photo of comedian">
                     <button type="button" class="gallery__btn" data-filter="5"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="5"> 
@@ -121,7 +122,7 @@
                         <span class="gallery__role">Comedian</span>
                     </div>
                 </div>
-                <div class="gallery__person6">
+                <div class="gallery__person gallery__person6" data-filter="model">
                     <img class="gallery__img" data-filter="6" src="assets/gallery/stefan-stefancik-QXevDflbl8A-unsplash.jpg" alt="photo of model">
                     <button type="button" class="gallery__btn" data-filter="6"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="6"> 
@@ -129,7 +130,7 @@
                         <span class="gallery__role">Model</span>
                     </div>
                 </div>
-                <div class="gallery__person7">
+                <div class="gallery__person gallery__person7" data-filter="musician">
                     <img class="gallery__img" data-filter="7" src="assets/gallery/sebastian-hemetsberger-lrPfuJsbWhQ-unsplash.jpg" alt="photo of musician">
                     <button type="button" class="gallery__btn" data-filter="7"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="7"> 
@@ -137,7 +138,7 @@
                         <span class="gallery__role">Musician</span>
                     </div>
                 </div>
-                <div class="gallery__person8">
+                <div class="gallery__person gallery__person8" data-filter="comedian">
                     <img class="gallery__img" data-filter="8" src="assets/gallery/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="photo of comedian">
                     <button type="button" class="gallery__btn" data-filter="8"><span class="fas fa-arrow-right gallery__btn--arrow"></span></button>
                     <div class="gallery__info" data-filter="8"> 
