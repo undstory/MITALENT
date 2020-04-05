@@ -110,6 +110,26 @@
     }
 }
 
+.btn {
+    width: 13rem;
+    height: 4rem;
+    background-color: $niceBlue;
+    font-size: 1.2rem;
+    font-family: $Nunito;
+    color: white;
+    font-weight: $bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none; 
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 2rem;
+
+    &:hover {
+        background-color: #5a7777;
+    }
+}
+
 // *MEDIA
 
 @media all and (max-width: 767px){

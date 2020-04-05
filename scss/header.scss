@@ -62,6 +62,10 @@
             bottom: 0;
             left: -17rem;
             z-index: 20;
+
+            &:hover {
+                background-color: #5a7777;
+            }
         }
 
         &--2 {
@@ -109,6 +113,11 @@
         color: $unactiveFontGrey; 
         display: flex;
         align-items: center;
+
+        &:hover {
+            color: $almostBlack;
+            font-weight: $huuuge;
+        }
     }
 
     &__link--active {      
