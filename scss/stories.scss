@@ -14,6 +14,17 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    &__down {
+        display: grid;
+        grid-template-rows: 52% 50%;
+        grid-template-columns: repeat(3, 30%);
+        gap: 3rem;
+        justify-items: stretch;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
 }
 
 .post {
@@ -31,10 +42,11 @@
         border: none; 
         display: block;
         flex-shrink: 0;
+        cursor: pointer;
 
         &:hover {
             background-color: $hoverBlue;
-        }
+        }        
     }
 
     &__text {
@@ -49,9 +61,18 @@
     &__title {
         font-size: 1.8rem;
         font-family: $Poppins;
-        color: $almostBlack;
         line-height: 1.8rem;
-        font-weight: $bold;
+        font-weight: $bold;  
+        text-transform: capitalize;   
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $almostBlack;
+
+        &:hover {
+            color: #87bbbc;
+        }
     }
 
     &__date {
@@ -59,7 +80,194 @@
         font-family: $Nunito;
         color: #77777e;
     }
+}
 
+.block {
+    &__1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / span 2;
+        height: 37rem;
+        background-image: url("../assets/eunice-stahl-748b16lZRHk-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+        position: relative;
+        z-index: 2;
+
+        &--trending {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            z-index: 12;
+            display: inline-block;
+            padding: 1rem 2rem; 
+            background-color: white;
+            font-size: 1.2rem;
+            color: $almostBlack;
+            font-family: $Nunito;
+            font-weight: $bold;
+            text-transform: uppercase;
+        }
+
+        &--text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 35%; 
+            background-color: $niceBlue;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        &--btn {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-align: left;
+            padding-left: 3rem;
+        }
+
+        &--title {
+            font-family: $Poppins;
+            font-size: 2rem;
+            color: white;
+            line-height: 1.6;
+            text-transform: capitalize;
+            text-align: left;
+            padding: 2rem 1rem 3rem 3rem;
+            width: 22rem;
+        }
+
+        &--date {
+            font-size: 1.5rem;
+            font-family: $Nunito;
+            color: white;
+            padding: 3rem;
+            text-align: left;
+        }
+    }
+
+    &__2 {
+        grid-row: 1 / span 2;
+        grid-column: 3/4;
+        height: 69.5rem;
+        background-image: url("../assets/mihai-stefan-NOj7slD8qtc-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+
+        &--text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+        }
+
+        &--title {
+            color: $almostBlack;
+            font-family: $Poppins;
+            font-weight: $bold;
+            font-size: 1.7rem;
+            line-height: 1.5;
+            text-transform: capitalize;
+            text-align: left;
+            padding: 2rem 1rem 2rem 0;
+        }
+
+        &--date {
+            font-size: 1.3rem;
+            font-family: $Nunito;
+            color: $almostBlack;
+            font-weight: $bold;
+        }
+    }
+
+    &__3 {
+        grid-row: 2 / 3;
+        grid-column: 1/2;
+        height: 30rem; 
+        background-image: url("../assets/vinicius-wiesehofer-OsLcGrdut2s-unsplash.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+
+        &--text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+            background-color: white;
+        }
+
+        &--title { 
+            color: $almostBlack;
+            font-family: $Poppins;
+            font-weight: $bold;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            text-transform: capitalize;
+            text-align: left;
+            padding: 2rem 1rem 2rem 0;  
+        }
+
+        &--date {
+            font-size: 1.3rem;
+            font-family: $Nunito;
+            color: $almostBlack;
+            font-weight: $bold;
+        }
+    }
+
+    &__4 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        background-image: url(../assets/ben-den-engelsen--WMVTExj-wI-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30rem; 
+        position: relative;
+        z-index: 2;
+
+        &--text {
+            position: absolute;
+            bottom: 5rem; 
+            left: 12rem;
+            z-index: 10;
+            font-size: 1.4rem;
+            font-family: $Nunito;
+            font-weight: $bold;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        z-index: 10;
+        bottom: 2rem; 
+        left: 2rem;
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 50%;
+        outline: none;
+        width: 8rem;
+        height: 8rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hoverBlue;
+        }
+    }
 }
 
 .line {
