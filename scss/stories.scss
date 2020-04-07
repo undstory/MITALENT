@@ -12,7 +12,7 @@
     &__up {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     &__down {
@@ -47,6 +47,10 @@
         &:hover {
             background-color: $hoverBlue;
         }        
+    }
+
+    &__img {
+        width: 100%;
     }
 
     &__text {
@@ -157,7 +161,7 @@
         height: 69.5rem;
         background-image: url("../assets/mihai-stefan-NOj7slD8qtc-unsplash.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         width: 100%;
         position: relative;
         z-index: 2;
@@ -167,6 +171,8 @@
             bottom: 0;
             left: 0;
             text-align: left;
+            background-color: white;
+            border: transparent;
         }
 
         &--title {
@@ -195,7 +201,7 @@
         background-image: url("../assets/vinicius-wiesehofer-OsLcGrdut2s-unsplash.jpg");
         background-repeat: no-repeat;
         width: 100%;
-        background-position: top center;
+        background-position: center center;
         background-size: cover;
         position: relative;
 
@@ -292,5 +298,62 @@
 
     .stories__up {
         padding-right: 0;
+    }
+
+    .block__4 {
+        background-size: contain;
+        height: 20rem;
+
+        &--text {
+            bottom: 20%;
+            left: 10%;
+        }
+
+    }
+
+    .block__btn {
+        bottom: 35%;
+        width: 5rem;
+        height: 5rem;
+
+        img {
+            width: 60%;
+        }
+    }
+
+
+}
+
+@media all and (max-width: 767px){
+
+    .stories__down {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+
+    .block__1 {
+        background-size: cover;
+    
+        &--text {
+        width: 45%; 
+        background-color: transparent;
+        }
+    }
+
+    .block__1, .block__2, .block__3 {
+        margin-bottom: 2rem;
+        
+    }
+}
+
+@media all and (max-width: 1100px){
+
+    .stories__down {
+    grid-template-columns: repeat(2, 50%);
+    }
+
+    .block__2 {
+        display: none;
     }
 }
