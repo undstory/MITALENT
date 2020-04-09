@@ -1,7 +1,8 @@
 @import 'variable';
 @import 'general';
-@import 'navbar';
-@import 'header';
-@import 'gallery';
-@import 'stories';
-@import 'footer';
+@import 'homepage/navbar';
+@import 'homepage/header';
+@import 'homepage/gallery';
+@import 'homepage/stories';
+@import 'homepage/footer';
+@import 'about/about.scss';

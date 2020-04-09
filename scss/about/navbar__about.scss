@@ -1,0 +1,18 @@
+.navbar {
+    &__bg--about {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    &__bg--person {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100vh;
+        z-index: 0;
+        opacity: .8;
+    }
+}

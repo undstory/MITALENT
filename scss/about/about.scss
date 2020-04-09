@@ -1,0 +1,75 @@
+.navbar {
+    &__bg--about {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    &__bg--person {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
+
+.social {
+    position: absolute;
+    top: 20rem;
+    left: 2rem;
+}
+
+.about {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 5;
+    padding-left: 2rem;
+
+    &__title {
+        font-size: 1.8rem;
+        font-family: $Poppins;
+        font-weight: $medium;
+        color: $almostBlack;
+        max-width: 45rem;
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+    }
+
+    &__letter {
+        font-size: 6rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-family: $Nunito;
+        color: $textGrey;
+        line-height: 1.6;
+        max-width: 50rem;
+        padding: 1rem;
+    }
+
+    &__quote {
+        padding: 4rem;
+        margin-left: 3rem;
+        background-color: $almostBlack;
+        color: white;
+        bottom: 0;
+        font-weight: $regular;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: serif;
+        font-style: italic;
+        line-height: 1.5;
+        max-width: 35rem;
+        text-transform: capitalize;
+        position: absolute;
+        left: 35%;
+    }
+}
+
+.bold {
+    font-weight: $huuuge;
+}
