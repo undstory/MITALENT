@@ -7,3 +7,144 @@
     z-index: 2;
 }
 
+.about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+
+    &__photo {
+        background-image: url("../../assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 52rem;
+        height: 75rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__btn--contact {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        border: none;
+        outline: none;
+        background-color: $niceBlue;
+        color: white;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        font-family: $Nunito;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 17rem;
+        height: 5.5rem;
+
+        &:hover {
+            background-color: $hoverBlue;
+        }
+    }
+
+    &__text {
+        padding: 0 2rem;
+        margin-top: 8rem;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        font-size: 2.4rem;
+        font-family: $Poppins;
+        color: $almostBlack;
+        max-width: 47rem;
+    }
+
+    &__paragraph {
+        margin: 2rem 0; 
+        font-size: 1.6rem;
+        font-family: $Nunito;
+        color: $textGrey;
+        max-width: 57rem;
+        line-height: 1.7;
+    }
+
+    &__quote {
+        background-color: $almostBlack;
+        color: white;
+        line-height: 1.5;
+        font-size: 2rem;
+        padding: 3rem;
+        margin-top: 3rem;
+        max-width: 28rem;
+        display: inline-block; 
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: $regular;
+    }
+
+    &__block {
+        margin-left: auto;
+        height: 50vh; 
+    }
+}
+
+.letter {
+    font-size: 6rem;
+    padding-right: .5rem;
+}
+
+.word {
+    font-weight: $bold;
+    font-style: italic;
+}
+
+@media all and (max-width: 1100px){
+    .about {
+        &__block {
+            display: none; 
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__paragraph {
+            font-size: 1.4rem;
+        }
+    }
+
+    .letter {
+        font-size: 4.8rem;
+        padding-right: .5rem;
+    }
+}
+
+@media all and (max-width: 760px){
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+
+        &__text {
+            margin: 3rem auto;
+            padding: 0 3rem;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            max-width: 200rem;
+        }
+
+        &__paragraph {
+            font-size: 1.8rem;
+            max-width: 300rem;
+        }
+
+
+    }
+}
