@@ -91,3 +91,41 @@ categoryLink.forEach(function(element){
     })
 })
 
+// !! slider --about 
+
+const gap = 3; 
+
+const carousel = document.querySelector(".slider__wrapper"),
+  content = document.querySelector(".slider__items"),
+  next = document.querySelector(".slider__btn--next"),
+  prev = document.querySelector(".slider__btn--prev");
+   
+
+
+
+next.addEventListener('click', function(e){
+    carousel.scrollBy(width + gap, 0);
+    if (carousel.scrollWidth !== 0) {
+        prev.style.display = 'block';
+      }
+    if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+        next.style.display = "none";
+      }
+    
+})
+
+let width = carousel.offsetWidth;
+
+prev.addEventListener("click", e => {
+    carousel.scrollBy(-(width + gap), 0);
+    if (carousel.scrollLeft - width - gap <= 0) {
+      prev.style.display = "none";
+    }
+    if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+      next.style.display = "flex";
+    }
+  });
+
+  
+// let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
