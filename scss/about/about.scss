@@ -144,8 +144,14 @@
             font-size: 1.8rem;
             max-width: 300rem;
         }
+    }
+}
 
-
+@media all and (max-width: 520px){
+    .about__photo {
+        width: 32rem;
+        height: 55rem;
+        background-size: contain;
     }
 }
 
@@ -193,4 +199,9 @@
         width: 30rem;
         height: 45rem;
     }
+
+    // &__description {
+    //     opacity: 0; 
+    // }
 }
+

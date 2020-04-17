@@ -13,12 +13,11 @@
 
     &__person1, &__person2, &__person3, &__person4, &__person5,
     &__person6, &__person7, &__person8 {
+        
         position: relative;
-    
     }
   
     &__img--active {
-    
         background-color: blue;
         opacity: .4;
     }
@@ -75,7 +74,6 @@
         text-transform: uppercase;
         text-align: center;
     }
-
 }
 
 .category {
