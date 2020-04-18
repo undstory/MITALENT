@@ -1,0 +1,45 @@
+.client {
+
+    padding-top: 0;
+
+    &__header {
+        position: relative;
+        height: 100vh;
+        border: 1px solid red;
+    }
+
+    &__pag {
+        position: absolute;
+        top: 50%;
+        left: -3%; 
+        transform: rotate(-90deg);
+    }
+
+    &__number {
+        font-size: 1.2rem;
+        font-family: $Nunito;
+        font-weight: $huuuge;
+        color: $almostBlack; 
+    }
+
+    &__line {
+        width: 3.8rem;
+        height: .2rem;
+        background-color: $almostBlack;
+        display: inline-block;
+        margin-bottom: .3rem;
+        margin-left: 3rem;
+    }
+}
+
+
+// ** media 
+
+@media all and (max-width: 767px){
+    .client {
+        &__pag {
+            display: none;
+        }
+    }
+
+}
