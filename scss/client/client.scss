@@ -13,6 +13,7 @@
             background-image: url("../../assets/bg_client.png");
             background-size: content;
             position: relative;
+            background-repeat: no-repeat;
             z-index: 1;
         }
 
@@ -118,6 +119,36 @@
         &:hover {
             background-color: $hoverBlue;
         }
+    }
+
+    &__info {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        z-index: 1;
+        background-color: #eeeeee;
+        padding: 3rem;
+
+        &--up {
+            font-family: $Nunito;
+            font-size: 1.2rem;
+            color: $almostBlack;
+            text-transform: uppercase;
+            font-weight: $bold;
+        } 
+    }
+
+    &__name {
+        font-family: $Poppins;
+        font-size: 3.2rem;
+        color: $almostBlack;
+        line-height: 1.8;
+        font-weight: $medium;
+        text-align: left;
+    }
+
+    &__btn--info {
+        margin-left: auto;
     }
 }
 
