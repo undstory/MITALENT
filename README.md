@@ -13,5 +13,5 @@ Using:
 * BEM Methodology
 * RWD
 
-Live: 
+Live: https://undstory.github.io/MITALENT/ (home&about&client)
 PSD source: https://freebiesbug.com/psd-freebies/mi-talent/
